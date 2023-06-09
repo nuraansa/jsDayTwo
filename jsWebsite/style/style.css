@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+.bg {
+  background-image: url();
+  height: 100vh;
+  width:100%;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.logo {
+  height: 90px;
+  border-radius: 45%;
+  margin-left: 1rem;
+}
+.navbar {
+  background-color: rgb(118, 175, 195);
+  position: fixed;
+}
+.nav-link:hover {
+  color: white !important;
+  background-color: rgb(6, 6, 6);
+}
+.footer {
+  color: black;
+  text-align: center;
+  background-color: rgb(78, 143, 164);
+  overflow-y: hidden;
+  bottom: 0;
+  width: 100%;
+  height: 2vh;
+  padding: 25px;
+  line-height: 10px;
+}
+/* products */
+.products {
+  display: flex;
+  flex-flow: wrap;
+  margin-bottom: 3rem;
+  /* width: 30rem;
+    margin: auto;
+    padding: 20px;
+    color: black; */
+}
+.card,
+.card-body {
+  border: 1px solid black;
+  margin: auto auto 1rem auto;
+  border-radius: 20px;
+  padding: 10px;
+  width: 500px;
+  background-color: rgb(242, 244, 246);
+}
+
+/* Media query */
+@media screen and (width < 900px) {
+  /* products */
+  .products {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+    align-items: center;
+  }
+  .card {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .card a,
+  .card p,
+  footer p {
+    font-size: small;
+  }
+}
