@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.main{
+    width:100% ;
+    margin-top: 1rem;
+}
+th {
+    border: 1px solid black;
+}
+tr, th{
+    padding: 1rem;
+}
+button{
+    font-size: 1rem;
+    padding: 0.7rem;
+    border-radius: 50px;
+    background-color: cadetblue;
+}
+button:hover{
+    background-color: rgb(62, 104, 105);
+}
